@@ -9,7 +9,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.6rem;
   background: #222831;
-  color: rgb(240, 240, 240);
+  color: rgb(213, 213, 213);
 }
 
 a {
@@ -31,9 +31,9 @@ button {
 h1 {
   color: #fff;
   background: #08ffff;
-  background: -webkit-linear-gradient(145deg, #fff 10%, #009dff 100%);
-  background: -moz-linear-gradient(145deg, #fff 10%, #009dff 100%);
-  background: linear-gradient(145deg, #fff 10%, #009dff 100%);
+  background: -webkit-linear-gradient(145deg, #84ff94 10%, #84e8ff 100%);
+  background: -moz-linear-gradient(145deg, #84ff94 10%, #84e8ff 100%);
+  background: linear-gradient(145deg, #84ff94 10%, #84e8ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

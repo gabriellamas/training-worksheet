@@ -9,14 +9,54 @@
   font-size: 1.6rem;
 }
 
-.worksheetContainer button {
-  padding: 3.2rem;
-  background: none;
-  border: none;
+.worksheetContainer {
+  margin-top: 32px;
   border: 1px solid #fff;
-  color: #fff;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  min-width: 700px;
+}
+
+.worksheetContainer nav {
+  display: flex;
+  width: 100%;
 }
 
 .worksheetContainer label {
   text-transform: uppercase;
+  border: 1px solid #fff;
+  cursor: pointer;
+  flex: 1;
+}
+
+.worksheetContainer label span {
+  padding: 1.6rem;
+  display: flex;
+  flex: 1;
+  font-weight: 900;
+  justify-content: center;
+}
+
+.worksheetContainer label:hover {
+  background: #fff;
+  color: #000;
+}
+
+.worksheetContainer label input {
+  display: none;
+}
+
+.worksheetContainer label input:checked + span {
+  background: #fff;
+  color: #000;
+}
+
+.content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }

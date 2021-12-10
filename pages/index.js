@@ -1,15 +1,23 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import TrainingWorksheet from "../trainings/TrainingWorksheet";
+import TrainingWorksheet from "../components/TrainingWorksheet";
 import Trainings from "../api/Trainings";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const handleChangeTrainingType = (e) => {
-    setTraining(e.target.value);
+    setTrainingTypeSelected(e.target.value);
   };
 
-  const [training, setTraining] = useState("a");
+  const [trainingTypeSelected, setTrainingTypeSelected] = useState("a");
+  const [trainingList, setTrainingList] = useState([]);
+
+  useEffect(() => {
+    setTrainingList(
+      Trainings.filter((training) => training.type === trainingTypeSelected)
+    );
+  }, [trainingTypeSelected]);
 
   return (
     <div>
@@ -19,23 +27,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>My Worksheet</h1>
-        <p>Gymnastics is a great way to improve your health and fitness.</p>
-
+        <h1>Training Worksheet</h1>
+        <p>Who says it won't work?? Biirrll!</p>
         <div className={styles.worksheetContainer}>
-          {Trainings.map((training) => (
-            <label onClick={handleChangeTrainingType} key={training.type}>
-              <input
-                type="radio"
-                value={training.type}
-                name="training"
-                defaultChecked={training.type === "a" && true}
-              />
-              <span>{training.type}</span>
-            </label>
-          ))}
-          <div className="content">
-            <TrainingWorksheet training={training} />
+          <nav>
+            {Trainings.map((training) => (
+              <label onClick={handleChangeTrainingType} key={training.type}>
+                <input
+                  type="radio"
+                  value={training.type}
+                  name="training"
+                  defaultChecked={training.type === "a" && true}
+                />
+                <span>{training.type}</span>
+              </label>
+            ))}
+          </nav>
+          <div className={styles.content}>
+            <TrainingWorksheet trainingList={trainingList[0]} />
           </div>
         </div>
       </main>

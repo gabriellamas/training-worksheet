@@ -3,7 +3,15 @@ const Trainings = [
     type: "a",
     exercises: [
       {
-        name: "agachamento",
+        name: "Agachamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Agachamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Agachamento",
         repetition: "3x6-8",
       },
     ],
@@ -12,7 +20,15 @@ const Trainings = [
     type: "b",
     exercises: [
       {
-        name: "agachamento",
+        name: "Bchamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Bchamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Bchamento",
         repetition: "3x6-8",
       },
     ],
@@ -21,7 +37,15 @@ const Trainings = [
     type: "c",
     exercises: [
       {
-        name: "agachamento",
+        name: "Cchamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Cchamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Cchamento",
         repetition: "3x6-8",
       },
     ],
@@ -30,7 +54,15 @@ const Trainings = [
     type: "d",
     exercises: [
       {
-        name: "agachamento",
+        name: "Dchamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Dchamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Dchamento",
         repetition: "3x6-8",
       },
     ],
@@ -39,7 +71,15 @@ const Trainings = [
     type: "e",
     exercises: [
       {
-        name: "agachamento",
+        name: "Echamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Echamento",
+        repetition: "3x6-8",
+      },
+      {
+        name: "Echamento",
         repetition: "3x6-8",
       },
     ],
