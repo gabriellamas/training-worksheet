@@ -1,9 +1,15 @@
-html,
+html {
+  font-size: 62.5%;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
+  background: #222831;
+  color: rgb(240, 240, 240);
 }
 
 a {
@@ -11,6 +17,27 @@ a {
   text-decoration: none;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: #fff;
+  background: #08ffff;
+  background: -webkit-linear-gradient(145deg, #fff 10%, #009dff 100%);
+  background: -moz-linear-gradient(145deg, #fff 10%, #009dff 100%);
+  background: linear-gradient(145deg, #fff 10%, #009dff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5.6rem;
+  display: inline-block;
+  font-family: "Bebas Neue", cursive;
 }
