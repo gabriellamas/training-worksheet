@@ -17,7 +17,8 @@
   border-radius: 8px;
   border: 2px solid #fff;
   overflow: hidden;
-  min-width: 700px;
+  max-width: 700px;
+  width: 100%;
 }
 
 .worksheetContainer nav {
