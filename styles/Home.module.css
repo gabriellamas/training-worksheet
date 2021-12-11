@@ -12,39 +12,37 @@
 
 .worksheetContainer {
   margin-top: 32px;
-  border: 1px solid #fff;
   display: inline-flex;
   flex-direction: column;
-  border-radius: 8px;
-  border: 2px solid #fff;
-  overflow: hidden;
-  max-width: 700px;
+  max-width: 600px;
   width: 100%;
 }
 
 .worksheetContainer nav {
   display: flex;
+  align-items: flex-end;
+  gap: 8px;
   width: 100%;
+  min-height: 67px;
 }
 
 .worksheetContainer label {
   text-transform: uppercase;
-  border: 1px solid #fff;
   cursor: pointer;
   flex: 1;
 }
 
 .worksheetContainer label span {
-  padding: 1.6rem;
+  padding: 18px 16px;
   display: flex;
   flex: 1;
   font-weight: 900;
   justify-content: center;
-}
-
-.worksheetContainer label:hover {
-  background: #fff;
-  color: #000;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s ease-in-out;
 }
 
 .worksheetContainer label input {
@@ -52,8 +50,9 @@
 }
 
 .worksheetContainer label input:checked + span {
-  background: #fff;
-  color: #000;
+  background: #84ff94;
+  color: rgb(0, 0, 0);
+  padding: 24px 16px;
 }
 
 .content {
@@ -61,4 +60,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  border: 2px solid #84ff94;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
